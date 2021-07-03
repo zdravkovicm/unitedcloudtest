@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="United Cloud Test Suite" >
+
+    <listeners>
+        <listener class-name="main.java.Utils.SuiteListener"/>
+    </listeners>
+
+    <test name="Chrome Test Automation">
+        <parameter name="browserName" value="chrome"/>
+            <classes>
+                <class name="test.Tests.ProfileCreationTest"/>
+                <class name="test.Tests.ProfileCreationIncorrectData"/>
+            </classes>
+    </test>
+
+</suite>
